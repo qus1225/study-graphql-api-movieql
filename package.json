@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/qus1225/study-graphql-api-movieql/issues"
   },
-  "homepage": "https://github.com/qus1225/study-graphql-api-movieql#readme"
+  "homepage": "https://github.com/qus1225/study-graphql-api-movieql#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
 }
