@@ -1,8 +1,15 @@
 // Query를 처리하는 Resolver들
 
+// datasource의 역할
+const qus = {
+  name: "Qus",
+  age: 32,
+  gender: "male"
+};
+
 const resolvers = {
   Query: {
-    name: () => "qus"
+    person: () => qus // db를 조회하는 쿼리 역할
   }
 };
 
