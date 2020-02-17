@@ -16,4 +16,5 @@ type Query {
 # Mutation - DB의 값을 변경
 type Mutation {
   addMovie(name: String!, score: Int!): Movie! # 추가 후 Movie를 반환
+  deleteMovie(id: Int!): Boolean!
 }
