@@ -1,9 +1,13 @@
-type Qus {
+# Query로 조회되는 데이터 형식(type)들을 정의
+
+type Person {
+  id: Int!
   name: String!
   age: Int!
   gender: String!
 }
 
 type Query {
-  person: Qus!
+  people: [Person]!
+  person(id: Int!): Person
 }
