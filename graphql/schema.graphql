@@ -1,4 +1,5 @@
 # Query로 조회되는 데이터 형식(type)들을 정의
+# type 중 Query, Mutation은 이름을 지켜야 함
 
 type Movie {
   id: Int!
@@ -6,7 +7,13 @@ type Movie {
   score: Int!
 }
 
+# Query - DB룰 조회
 type Query {
   movies: [Movie]!
   movie(id: Int!): Movie
+}
+
+# Mutation - DB의 값을 변경
+type Mutation {
+  addMovie(name: String!, score: Int!): Movie! # 추가 후 Movie를 반환
 }
